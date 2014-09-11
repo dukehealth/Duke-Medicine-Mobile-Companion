@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2502995A18C50BF90020023B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2502995918C50BF90020023B /* Foundation.framework */; };
+		2502995C18C50BF90020023B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2502995B18C50BF90020023B /* CoreGraphics.framework */; };
+		2502995E18C50BF90020023B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2502995D18C50BF90020023B /* UIKit.framework */; };
+		2502998018C50BF90020023B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2502995918C50BF90020023B /* Foundation.framework */; };
+		2502998118C50BF90020023B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2502995D18C50BF90020023B /* UIKit.framework */; };
+		250299C818C511AF0020023B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250299BC18C511AF0020023B /* Main_iPad.storyboard */; };
+		250299C918C511AF0020023B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250299BE18C511AF0020023B /* Main_iPhone.storyboard */; };
+		250299CB18C511AF0020023B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250299C218C511AF0020023B /* Images.xcassets */; };
+		250B17CA194E6FF3003A9919 /* MCSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250B17C9194E6FF3003A9919 /* MCSettingsViewController.swift */; };
+		25125B83196AEDA200F88202 /* MCShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25125B82196AEDA200F88202 /* MCShortcuts.swift */; };
+		25125B85196AEDD900F88202 /* MCHaikuOrCanto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25125B84196AEDD900F88202 /* MCHaikuOrCanto.swift */; };
+		251820D119C09B3B00A5198A /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 251820D019C09B3B00A5198A /* Launch Screen.xib */; };
+		253D0419194A22DF006554C9 /* MCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D0418194A22DF006554C9 /* MCMainViewController.swift */; };
+		253D041B194A2344006554C9 /* MCSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D041A194A2344006554C9 /* MCSettings.swift */; };
+		25527DEF197B058A00DEBDBE /* TOWebViewControllerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25527DDE197B058A00DEBDBE /* TOWebViewControllerLocalizable.strings */; };
+		25527DF0197B058A00DEBDBE /* TOActivityChrome.m in Sources */ = {isa = PBXBuildFile; fileRef = 25527DE6197B058A00DEBDBE /* TOActivityChrome.m */; };
+		25527DF1197B058A00DEBDBE /* TOActivitySafari.m in Sources */ = {isa = PBXBuildFile; fileRef = 25527DE8197B058A00DEBDBE /* TOActivitySafari.m */; };
+		25527DF2197B058A00DEBDBE /* TOWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25527DEA197B058A00DEBDBE /* TOWebViewController.m */; };
+		25527DF3197B058A00DEBDBE /* UIImage+TOWebViewControllerIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 25527DEC197B058A00DEBDBE /* UIImage+TOWebViewControllerIcons.m */; };
+		25587257194BF69200F140B0 /* MCAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25587256194BF69200F140B0 /* MCAppDelegate.swift */; };
+		2558725B194D40ED00F140B0 /* MCColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2558725A194D40ED00F140B0 /* MCColors.swift */; };
+		259B0D8D18C574C500E4409B /* IASKAppSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 259B0D6F18C574C500E4409B /* IASKAppSettingsViewController.m */; };
+		259B0D8E18C574C500E4409B /* IASKAppSettingsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 259B0D7118C574C500E4409B /* IASKAppSettingsWebViewController.m */; };
+		259B0D8F18C574C500E4409B /* IASKSpecifierValuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 259B0D7318C574C500E4409B /* IASKSpecifierValuesViewController.m */; };
+		259B0D9018C574C500E4409B /* IASKSettingsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 259B0D7718C574C500E4409B /* IASKSettingsReader.m */; };
+		259B0D9118C574C500E4409B /* IASKSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 259B0D7918C574C500E4409B /* IASKSettingsStore.m */; };
+		259B0D9218C574C500E4409B /* IASKSettingsStoreFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 259B0D7B18C574C500E4409B /* IASKSettingsStoreFile.m */; };
+		259B0D9318C574C500E4409B /* IASKSettingsStoreUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 259B0D7D18C574C500E4409B /* IASKSettingsStoreUserDefaults.m */; };
+		259B0D9418C574C500E4409B /* IASKSpecifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 259B0D7F18C574C500E4409B /* IASKSpecifier.m */; };
+		259B0D9518C574C500E4409B /* IASKPSSliderSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 259B0D8218C574C500E4409B /* IASKPSSliderSpecifierViewCell.m */; };
+		259B0D9618C574C500E4409B /* IASKPSTextFieldSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 259B0D8418C574C500E4409B /* IASKPSTextFieldSpecifierViewCell.m */; };
+		259B0D9718C574C500E4409B /* IASKPSTitleValueSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 259B0D8618C574C500E4409B /* IASKPSTitleValueSpecifierViewCell.m */; };
+		259B0D9818C574C500E4409B /* IASKSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 259B0D8818C574C500E4409B /* IASKSlider.m */; };
+		259B0D9918C574C500E4409B /* IASKSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 259B0D8A18C574C500E4409B /* IASKSwitch.m */; };
+		259B0D9A18C574C500E4409B /* IASKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 259B0D8C18C574C500E4409B /* IASKTextField.m */; };
+		259B0D9C18C57BC100E4409B /* InAppSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 259B0D9B18C57BC100E4409B /* InAppSettings.bundle */; };
+		25A59F13197D976600763D04 /* Help.html in Resources */ = {isa = PBXBuildFile; fileRef = 25A59F12197D976600763D04 /* Help.html */; };
+		25C8986E19610B54004AC222 /* MCModalWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C8986D19610B54004AC222 /* MCModalWebViewController.swift */; };
+		25DCAC8B196C820D00D99EC3 /* License.html in Resources */ = {isa = PBXBuildFile; fileRef = 25DCAC89196C820D00D99EC3 /* License.html */; };
+		25DCAC8C196C820D00D99EC3 /* OpenSourceLicenses.html in Resources */ = {isa = PBXBuildFile; fileRef = 25DCAC8A196C820D00D99EC3 /* OpenSourceLicenses.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2502998218C50BFA0020023B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2502994E18C50BF90020023B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2502995518C50BF90020023B;
+			remoteInfo = "Maestro Care Mobile Companion";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2502995618C50BF90020023B /* Duke Medicine Mobile Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duke Medicine Mobile Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2502995918C50BF90020023B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2502995B18C50BF90020023B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2502995D18C50BF90020023B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2502997D18C50BF90020023B /* Duke Medicine Mobile CompanionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Duke Medicine Mobile CompanionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		250299BD18C511AF0020023B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		250299BF18C511AF0020023B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		250299C218C511AF0020023B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		250299C318C511AF0020023B /* Duke Medicine Mobile Companion-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Duke Medicine Mobile Companion-Info.plist"; sourceTree = "<group>"; };
+		250B17C9194E6FF3003A9919 /* MCSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCSettingsViewController.swift; sourceTree = "<group>"; };
+		25125B82196AEDA200F88202 /* MCShortcuts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCShortcuts.swift; sourceTree = "<group>"; };
+		25125B84196AEDD900F88202 /* MCHaikuOrCanto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCHaikuOrCanto.swift; sourceTree = "<group>"; };
+		251820D019C09B3B00A5198A /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		253D0418194A22DF006554C9 /* MCMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCMainViewController.swift; sourceTree = "<group>"; };
+		253D041A194A2344006554C9 /* MCSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCSettings.swift; sourceTree = "<group>"; };
+		25527DDF197B058A00DEBDBE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/TOWebViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		25527DE0197B058A00DEBDBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TOWebViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		25527DE1197B058A00DEBDBE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/TOWebViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		25527DE2197B058A00DEBDBE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/TOWebViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		25527DE3197B058A00DEBDBE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/TOWebViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		25527DE4197B058A00DEBDBE /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/TOWebViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		25527DE5197B058A00DEBDBE /* TOActivityChrome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOActivityChrome.h; sourceTree = "<group>"; };
+		25527DE6197B058A00DEBDBE /* TOActivityChrome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOActivityChrome.m; sourceTree = "<group>"; };
+		25527DE7197B058A00DEBDBE /* TOActivitySafari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOActivitySafari.h; sourceTree = "<group>"; };
+		25527DE8197B058A00DEBDBE /* TOActivitySafari.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOActivitySafari.m; sourceTree = "<group>"; };
+		25527DE9197B058A00DEBDBE /* TOWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOWebViewController.h; sourceTree = "<group>"; };
+		25527DEA197B058A00DEBDBE /* TOWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOWebViewController.m; sourceTree = "<group>"; };
+		25527DEB197B058A00DEBDBE /* UIImage+TOWebViewControllerIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TOWebViewControllerIcons.h"; sourceTree = "<group>"; };
+		25527DEC197B058A00DEBDBE /* UIImage+TOWebViewControllerIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TOWebViewControllerIcons.m"; sourceTree = "<group>"; };
+		25527DED197B058A00DEBDBE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TOWebViewControllerLocalizable.strings"; sourceTree = "<group>"; };
+		25527DEE197B058A00DEBDBE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/TOWebViewControllerLocalizable.strings"; sourceTree = "<group>"; };
+		25587256194BF69200F140B0 /* MCAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCAppDelegate.swift; sourceTree = "<group>"; };
+		2558725A194D40ED00F140B0 /* MCColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCColors.swift; sourceTree = "<group>"; };
+		2559CE07194E7B7300010818 /* Duke Medicine Mobile Companion-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Duke Medicine Mobile Companion-Bridging-Header.h"; sourceTree = "<group>"; };
+		259B0D6E18C574C500E4409B /* IASKAppSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKAppSettingsViewController.h; sourceTree = "<group>"; };
+		259B0D6F18C574C500E4409B /* IASKAppSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKAppSettingsViewController.m; sourceTree = "<group>"; };
+		259B0D7018C574C500E4409B /* IASKAppSettingsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKAppSettingsWebViewController.h; sourceTree = "<group>"; };
+		259B0D7118C574C500E4409B /* IASKAppSettingsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKAppSettingsWebViewController.m; sourceTree = "<group>"; };
+		259B0D7218C574C500E4409B /* IASKSpecifierValuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSpecifierValuesViewController.h; sourceTree = "<group>"; };
+		259B0D7318C574C500E4409B /* IASKSpecifierValuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSpecifierValuesViewController.m; sourceTree = "<group>"; };
+		259B0D7418C574C500E4409B /* IASKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKViewController.h; sourceTree = "<group>"; };
+		259B0D7618C574C500E4409B /* IASKSettingsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsReader.h; sourceTree = "<group>"; };
+		259B0D7718C574C500E4409B /* IASKSettingsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsReader.m; sourceTree = "<group>"; };
+		259B0D7818C574C500E4409B /* IASKSettingsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsStore.h; sourceTree = "<group>"; };
+		259B0D7918C574C500E4409B /* IASKSettingsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsStore.m; sourceTree = "<group>"; };
+		259B0D7A18C574C500E4409B /* IASKSettingsStoreFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsStoreFile.h; sourceTree = "<group>"; };
+		259B0D7B18C574C500E4409B /* IASKSettingsStoreFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsStoreFile.m; sourceTree = "<group>"; };
+		259B0D7C18C574C500E4409B /* IASKSettingsStoreUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsStoreUserDefaults.h; sourceTree = "<group>"; };
+		259B0D7D18C574C500E4409B /* IASKSettingsStoreUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsStoreUserDefaults.m; sourceTree = "<group>"; };
+		259B0D7E18C574C500E4409B /* IASKSpecifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSpecifier.h; sourceTree = "<group>"; };
+		259B0D7F18C574C500E4409B /* IASKSpecifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSpecifier.m; sourceTree = "<group>"; };
+		259B0D8118C574C500E4409B /* IASKPSSliderSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKPSSliderSpecifierViewCell.h; sourceTree = "<group>"; };
+		259B0D8218C574C500E4409B /* IASKPSSliderSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKPSSliderSpecifierViewCell.m; sourceTree = "<group>"; };
+		259B0D8318C574C500E4409B /* IASKPSTextFieldSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKPSTextFieldSpecifierViewCell.h; sourceTree = "<group>"; };
+		259B0D8418C574C500E4409B /* IASKPSTextFieldSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKPSTextFieldSpecifierViewCell.m; sourceTree = "<group>"; };
+		259B0D8518C574C500E4409B /* IASKPSTitleValueSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKPSTitleValueSpecifierViewCell.h; sourceTree = "<group>"; };
+		259B0D8618C574C500E4409B /* IASKPSTitleValueSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKPSTitleValueSpecifierViewCell.m; sourceTree = "<group>"; };
+		259B0D8718C574C500E4409B /* IASKSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSlider.h; sourceTree = "<group>"; };
+		259B0D8818C574C500E4409B /* IASKSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSlider.m; sourceTree = "<group>"; };
+		259B0D8918C574C500E4409B /* IASKSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSwitch.h; sourceTree = "<group>"; };
+		259B0D8A18C574C500E4409B /* IASKSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSwitch.m; sourceTree = "<group>"; };
+		259B0D8B18C574C500E4409B /* IASKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKTextField.h; sourceTree = "<group>"; };
+		259B0D8C18C574C500E4409B /* IASKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKTextField.m; sourceTree = "<group>"; };
+		259B0D9B18C57BC100E4409B /* InAppSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = InAppSettings.bundle; sourceTree = "<group>"; };
+		25A59F12197D976600763D04 /* Help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Help.html; sourceTree = "<group>"; };
+		25C8986D19610B54004AC222 /* MCModalWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCModalWebViewController.swift; sourceTree = "<group>"; };
+		25DCAC89196C820D00D99EC3 /* License.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = License.html; sourceTree = "<group>"; };
+		25DCAC8A196C820D00D99EC3 /* OpenSourceLicenses.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = OpenSourceLicenses.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2502995318C50BF90020023B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2502995C18C50BF90020023B /* CoreGraphics.framework in Frameworks */,
+				2502995E18C50BF90020023B /* UIKit.framework in Frameworks */,
+				2502995A18C50BF90020023B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2502997A18C50BF90020023B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2502998118C50BF90020023B /* UIKit.framework in Frameworks */,
+				2502998018C50BF90020023B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2502994D18C50BF90020023B = {
+			isa = PBXGroup;
+			children = (
+				2502995F18C50BF90020023B /* Duke Medicine Mobile Companion */,
+				2502995818C50BF90020023B /* Frameworks */,
+				2502995718C50BF90020023B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2502995718C50BF90020023B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2502995618C50BF90020023B /* Duke Medicine Mobile Companion.app */,
+				2502997D18C50BF90020023B /* Duke Medicine Mobile CompanionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2502995818C50BF90020023B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2502995918C50BF90020023B /* Foundation.framework */,
+				2502995B18C50BF90020023B /* CoreGraphics.framework */,
+				2502995D18C50BF90020023B /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2502995F18C50BF90020023B /* Duke Medicine Mobile Companion */ = {
+			isa = PBXGroup;
+			children = (
+				250299B018C511AF0020023B /* Classes */,
+				250299BB18C511AF0020023B /* Resources */,
+			);
+			name = "Duke Medicine Mobile Companion";
+			path = "Maestro Care Mobile Companion";
+			sourceTree = "<group>";
+		};
+		250299B018C511AF0020023B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				250299B118C511AF0020023B /* Controllers */,
+				250299B618C511AF0020023B /* Main */,
+				25DC975818DFC94200B17520 /* Utilities */,
+				250299CD18C519620020023B /* External */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		250299B118C511AF0020023B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				25C8986D19610B54004AC222 /* MCModalWebViewController.swift */,
+				253D0418194A22DF006554C9 /* MCMainViewController.swift */,
+				250B17C9194E6FF3003A9919 /* MCSettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		250299B618C511AF0020023B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				25587256194BF69200F140B0 /* MCAppDelegate.swift */,
+				2559CE07194E7B7300010818 /* Duke Medicine Mobile Companion-Bridging-Header.h */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		250299BB18C511AF0020023B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				25DCAC88196C820D00D99EC3 /* HTML */,
+				259B0D9B18C57BC100E4409B /* InAppSettings.bundle */,
+				250299BC18C511AF0020023B /* Main_iPad.storyboard */,
+				251820D019C09B3B00A5198A /* Launch Screen.xib */,
+				250299BE18C511AF0020023B /* Main_iPhone.storyboard */,
+				250299C218C511AF0020023B /* Images.xcassets */,
+				250299C318C511AF0020023B /* Duke Medicine Mobile Companion-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		250299CD18C519620020023B /* External */ = {
+			isa = PBXGroup;
+			children = (
+				259B0D6C18C574C500E4409B /* InAppSettingsKit */,
+				25527DDD197B058A00DEBDBE /* TOWebViewController */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		25527DDD197B058A00DEBDBE /* TOWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				25527DDE197B058A00DEBDBE /* TOWebViewControllerLocalizable.strings */,
+				25527DE5197B058A00DEBDBE /* TOActivityChrome.h */,
+				25527DE6197B058A00DEBDBE /* TOActivityChrome.m */,
+				25527DE7197B058A00DEBDBE /* TOActivitySafari.h */,
+				25527DE8197B058A00DEBDBE /* TOActivitySafari.m */,
+				25527DE9197B058A00DEBDBE /* TOWebViewController.h */,
+				25527DEA197B058A00DEBDBE /* TOWebViewController.m */,
+				25527DEB197B058A00DEBDBE /* UIImage+TOWebViewControllerIcons.h */,
+				25527DEC197B058A00DEBDBE /* UIImage+TOWebViewControllerIcons.m */,
+			);
+			path = TOWebViewController;
+			sourceTree = "<group>";
+		};
+		259B0D6C18C574C500E4409B /* InAppSettingsKit */ = {
+			isa = PBXGroup;
+			children = (
+				259B0D6D18C574C500E4409B /* Controllers */,
+				259B0D7518C574C500E4409B /* Models */,
+				259B0D8018C574C500E4409B /* Views */,
+			);
+			path = InAppSettingsKit;
+			sourceTree = "<group>";
+		};
+		259B0D6D18C574C500E4409B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				259B0D6E18C574C500E4409B /* IASKAppSettingsViewController.h */,
+				259B0D6F18C574C500E4409B /* IASKAppSettingsViewController.m */,
+				259B0D7018C574C500E4409B /* IASKAppSettingsWebViewController.h */,
+				259B0D7118C574C500E4409B /* IASKAppSettingsWebViewController.m */,
+				259B0D7218C574C500E4409B /* IASKSpecifierValuesViewController.h */,
+				259B0D7318C574C500E4409B /* IASKSpecifierValuesViewController.m */,
+				259B0D7418C574C500E4409B /* IASKViewController.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		259B0D7518C574C500E4409B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				259B0D7618C574C500E4409B /* IASKSettingsReader.h */,
+				259B0D7718C574C500E4409B /* IASKSettingsReader.m */,
+				259B0D7818C574C500E4409B /* IASKSettingsStore.h */,
+				259B0D7918C574C500E4409B /* IASKSettingsStore.m */,
+				259B0D7A18C574C500E4409B /* IASKSettingsStoreFile.h */,
+				259B0D7B18C574C500E4409B /* IASKSettingsStoreFile.m */,
+				259B0D7C18C574C500E4409B /* IASKSettingsStoreUserDefaults.h */,
+				259B0D7D18C574C500E4409B /* IASKSettingsStoreUserDefaults.m */,
+				259B0D7E18C574C500E4409B /* IASKSpecifier.h */,
+				259B0D7F18C574C500E4409B /* IASKSpecifier.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		259B0D8018C574C500E4409B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				259B0D8118C574C500E4409B /* IASKPSSliderSpecifierViewCell.h */,
+				259B0D8218C574C500E4409B /* IASKPSSliderSpecifierViewCell.m */,
+				259B0D8318C574C500E4409B /* IASKPSTextFieldSpecifierViewCell.h */,
+				259B0D8418C574C500E4409B /* IASKPSTextFieldSpecifierViewCell.m */,
+				259B0D8518C574C500E4409B /* IASKPSTitleValueSpecifierViewCell.h */,
+				259B0D8618C574C500E4409B /* IASKPSTitleValueSpecifierViewCell.m */,
+				259B0D8718C574C500E4409B /* IASKSlider.h */,
+				259B0D8818C574C500E4409B /* IASKSlider.m */,
+				259B0D8918C574C500E4409B /* IASKSwitch.h */,
+				259B0D8A18C574C500E4409B /* IASKSwitch.m */,
+				259B0D8B18C574C500E4409B /* IASKTextField.h */,
+				259B0D8C18C574C500E4409B /* IASKTextField.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25DC975818DFC94200B17520 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2558725A194D40ED00F140B0 /* MCColors.swift */,
+				25125B84196AEDD900F88202 /* MCHaikuOrCanto.swift */,
+				253D041A194A2344006554C9 /* MCSettings.swift */,
+				25125B82196AEDA200F88202 /* MCShortcuts.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		25DCAC88196C820D00D99EC3 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				25A59F12197D976600763D04 /* Help.html */,
+				25DCAC89196C820D00D99EC3 /* License.html */,
+				25DCAC8A196C820D00D99EC3 /* OpenSourceLicenses.html */,
+			);
+			path = HTML;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2502995518C50BF90020023B /* Duke Medicine Mobile Companion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2502998E18C50BFA0020023B /* Build configuration list for PBXNativeTarget "Duke Medicine Mobile Companion" */;
+			buildPhases = (
+				2502995218C50BF90020023B /* Sources */,
+				2502995318C50BF90020023B /* Frameworks */,
+				2502995418C50BF90020023B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Duke Medicine Mobile Companion";
+			productName = "Maestro Care Mobile Companion";
+			productReference = 2502995618C50BF90020023B /* Duke Medicine Mobile Companion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2502997C18C50BF90020023B /* Duke Medicine Mobile CompanionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2502999118C50BFA0020023B /* Build configuration list for PBXNativeTarget "Duke Medicine Mobile CompanionTests" */;
+			buildPhases = (
+				2502997918C50BF90020023B /* Sources */,
+				2502997A18C50BF90020023B /* Frameworks */,
+				2502997B18C50BF90020023B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2502998318C50BFA0020023B /* PBXTargetDependency */,
+			);
+			name = "Duke Medicine Mobile CompanionTests";
+			productName = "Maestro Care Mobile CompanionTests";
+			productReference = 2502997D18C50BF90020023B /* Duke Medicine Mobile CompanionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2502994E18C50BF90020023B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Duke Medicine";
+				TargetAttributes = {
+					2502995518C50BF90020023B = {
+						DevelopmentTeam = 9E5WX552TC;
+					};
+					2502997C18C50BF90020023B = {
+						TestTargetID = 2502995518C50BF90020023B;
+					};
+				};
+			};
+			buildConfigurationList = 2502995118C50BF90020023B /* Build configuration list for PBXProject "Duke Medicine Mobile Companion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				da,
+				"es-ES",
+				es,
+				fr,
+				ja,
+				"zh-Hans",
+				"zh-Hant",
+				de,
+				ko,
+				pl,
+			);
+			mainGroup = 2502994D18C50BF90020023B;
+			productRefGroup = 2502995718C50BF90020023B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2502995518C50BF90020023B /* Duke Medicine Mobile Companion */,
+				2502997C18C50BF90020023B /* Duke Medicine Mobile CompanionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2502995418C50BF90020023B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				250299C918C511AF0020023B /* Main_iPhone.storyboard in Resources */,
+				25DCAC8B196C820D00D99EC3 /* License.html in Resources */,
+				251820D119C09B3B00A5198A /* Launch Screen.xib in Resources */,
+				25527DEF197B058A00DEBDBE /* TOWebViewControllerLocalizable.strings in Resources */,
+				259B0D9C18C57BC100E4409B /* InAppSettings.bundle in Resources */,
+				250299CB18C511AF0020023B /* Images.xcassets in Resources */,
+				25A59F13197D976600763D04 /* Help.html in Resources */,
+				25DCAC8C196C820D00D99EC3 /* OpenSourceLicenses.html in Resources */,
+				250299C818C511AF0020023B /* Main_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2502997B18C50BF90020023B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2502995218C50BF90020023B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				253D041B194A2344006554C9 /* MCSettings.swift in Sources */,
+				25587257194BF69200F140B0 /* MCAppDelegate.swift in Sources */,
+				25527DF0197B058A00DEBDBE /* TOActivityChrome.m in Sources */,
+				25527DF1197B058A00DEBDBE /* TOActivitySafari.m in Sources */,
+				259B0D8F18C574C500E4409B /* IASKSpecifierValuesViewController.m in Sources */,
+				25125B83196AEDA200F88202 /* MCShortcuts.swift in Sources */,
+				2558725B194D40ED00F140B0 /* MCColors.swift in Sources */,
+				253D0419194A22DF006554C9 /* MCMainViewController.swift in Sources */,
+				259B0D9218C574C500E4409B /* IASKSettingsStoreFile.m in Sources */,
+				259B0D9318C574C500E4409B /* IASKSettingsStoreUserDefaults.m in Sources */,
+				259B0D9418C574C500E4409B /* IASKSpecifier.m in Sources */,
+				25C8986E19610B54004AC222 /* MCModalWebViewController.swift in Sources */,
+				259B0D9118C574C500E4409B /* IASKSettingsStore.m in Sources */,
+				259B0D9018C574C500E4409B /* IASKSettingsReader.m in Sources */,
+				259B0D9818C574C500E4409B /* IASKSlider.m in Sources */,
+				259B0D9718C574C500E4409B /* IASKPSTitleValueSpecifierViewCell.m in Sources */,
+				25527DF2197B058A00DEBDBE /* TOWebViewController.m in Sources */,
+				25527DF3197B058A00DEBDBE /* UIImage+TOWebViewControllerIcons.m in Sources */,
+				259B0D9518C574C500E4409B /* IASKPSSliderSpecifierViewCell.m in Sources */,
+				259B0D8E18C574C500E4409B /* IASKAppSettingsWebViewController.m in Sources */,
+				259B0D9918C574C500E4409B /* IASKSwitch.m in Sources */,
+				25125B85196AEDD900F88202 /* MCHaikuOrCanto.swift in Sources */,
+				259B0D9618C574C500E4409B /* IASKPSTextFieldSpecifierViewCell.m in Sources */,
+				250B17CA194E6FF3003A9919 /* MCSettingsViewController.swift in Sources */,
+				259B0D8D18C574C500E4409B /* IASKAppSettingsViewController.m in Sources */,
+				259B0D9A18C574C500E4409B /* IASKTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2502997918C50BF90020023B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2502998318C50BFA0020023B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2502995518C50BF90020023B /* Duke Medicine Mobile Companion */;
+			targetProxy = 2502998218C50BFA0020023B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		250299BC18C511AF0020023B /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				250299BD18C511AF0020023B /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		250299BE18C511AF0020023B /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				250299BF18C511AF0020023B /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		25527DDE197B058A00DEBDBE /* TOWebViewControllerLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25527DDF197B058A00DEBDBE /* de */,
+				25527DE0197B058A00DEBDBE /* en */,
+				25527DE1197B058A00DEBDBE /* es */,
+				25527DE2197B058A00DEBDBE /* ja */,
+				25527DE3197B058A00DEBDBE /* ko */,
+				25527DE4197B058A00DEBDBE /* pl */,
+				25527DED197B058A00DEBDBE /* zh-Hans */,
+				25527DEE197B058A00DEBDBE /* zh-Hant */,
+			);
+			name = TOWebViewControllerLocalizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2502998C18C50BFA0020023B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2502998D18C50BFA0020023B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2502998F18C50BFA0020023B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = "Resources/Duke Medicine Mobile Companion-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Duke Medicine Mobile Companion";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/Main/Duke Medicine Mobile Companion-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2502999018C50BFA0020023B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = "Resources/Duke Medicine Mobile Companion-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Duke Medicine Mobile Companion";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/Main/Duke Medicine Mobile Companion-Bridging-Header.h";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2502999218C50BFA0020023B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Duke Medicine Mobile Companion.app/Duke Medicine Mobile Companion";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Duke Medicine Mobile Companion/Duke Medicine Mobile Companion-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Duke Medicine Mobile CompanionTests/Duke Medicine Mobile CompanionTests-Info.plist";
+				PRODUCT_NAME = "Duke Medicine Mobile CompanionTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2502999318C50BFA0020023B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Duke Medicine Mobile Companion.app/Duke Medicine Mobile Companion";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Duke Medicine Mobile Companion/Duke Medicine Mobile Companion-Prefix.pch";
+				INFOPLIST_FILE = "Duke Medicine Mobile CompanionTests/Duke Medicine Mobile CompanionTests-Info.plist";
+				PRODUCT_NAME = "Duke Medicine Mobile CompanionTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2502995118C50BF90020023B /* Build configuration list for PBXProject "Duke Medicine Mobile Companion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2502998C18C50BFA0020023B /* Debug */,
+				2502998D18C50BFA0020023B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2502998E18C50BFA0020023B /* Build configuration list for PBXNativeTarget "Duke Medicine Mobile Companion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2502998F18C50BFA0020023B /* Debug */,
+				2502999018C50BFA0020023B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2502999118C50BFA0020023B /* Build configuration list for PBXNativeTarget "Duke Medicine Mobile CompanionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2502999218C50BFA0020023B /* Debug */,
+				2502999318C50BFA0020023B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2502994E18C50BF90020023B /* Project object */;
+}

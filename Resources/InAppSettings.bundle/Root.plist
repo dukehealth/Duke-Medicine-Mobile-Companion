@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Link Options</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Open maps in:</string>
+			<key>Key</key>
+			<string>mapsBaseURL</string>
+			<key>DefaultValue</key>
+			<string>https://maps.google.com/maps</string>
+			<key>Titles</key>
+			<array>
+				<string>Apple Maps</string>
+				<string>Google Maps</string>
+				<string>Safari (Google Maps)</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>https://maps.apple.com/maps</string>
+				<string>comgooglemaps://maps.google.com/maps</string>
+				<string>https://maps.google.com/maps</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Return to:</string>
+			<key>Key</key>
+			<string>returnTo</string>
+			<key>DefaultValue</key>
+			<string>Canto</string>
+			<key>Titles</key>
+			<array>
+				<string>Canto</string>
+				<string>Haiku</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>Canto</string>
+				<string>Haiku</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>About Duke Medicine Mobile Companion</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<string>1.1</string>
+			<key>Key</key>
+			<string>version</string>
+			<key>Title</key>
+			<string>Version</string>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>Help.html</string>
+			<key>IASKViewControllerClass</key>
+			<string>IASKAppSettingsWebViewController</string>
+			<key>IASKViewControllerSelector</key>
+			<string>initWithFile:key:</string>
+			<key>Title</key>
+			<string>Help</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+			<key>IASKChildTitle</key>
+			<string>Help</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>Licenses</string>
+			<key>Title</key>
+			<string>Licenses</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>downloadCanto</string>
+			<key>Title</key>
+			<string>Download Canto</string>
+			<key>Type</key>
+			<string>IASKButtonSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>downloadHaiku</string>
+			<key>Title</key>
+			<string>Download Haiku</string>
+			<key>Type</key>
+			<string>IASKButtonSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>openCanto</string>
+			<key>Title</key>
+			<string>Open Canto</string>
+			<key>Type</key>
+			<string>IASKButtonSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>openHaiku</string>
+			<key>Title</key>
+			<string>Open Haiku</string>
+			<key>Type</key>
+			<string>IASKButtonSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>DukeMedicine</string>
+			<key>Title</key>
+			<string>Duke Medicine</string>
+			<key>Type</key>
+			<string>IASKButtonSpecifier</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>Title</key>
+	<string>Duke Medicine</string>
+</dict>
+</plist>
