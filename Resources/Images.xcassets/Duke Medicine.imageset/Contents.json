@@ -2,6 +2,10 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "Duke Medicine Universal.pdf"
+    },
+    {
+      "idiom" : "universal",
       "scale" : "1x",
       "filename" : "Duke Medicine.png"
     },
