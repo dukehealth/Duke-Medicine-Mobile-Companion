@@ -33,7 +33,7 @@ class MCSettingsViewController: IASKAppSettingsViewController, IASKSettingsDeleg
     }
     
     override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
-        super.init(nibName: nibName, bundle: nil)
+        super.init(nibName: nibNameOrNil, bundle: nil)
     }
     
     override init(style: UITableViewStyle) {
@@ -62,8 +62,8 @@ class MCSettingsViewController: IASKAppSettingsViewController, IASKSettingsDeleg
     
     // Remove appropriate settings depending whether Haiku and/or Canto are installed
     func determineHiddenKeys() {
-        let HaikuInstalled = UIApplication.sharedApplication().canOpenURL(NSURL.URLWithString("epichaiku://"))
-        let CantoInstalled = UIApplication.sharedApplication().canOpenURL(NSURL.URLWithString("epiccanto://"))
+        let HaikuInstalled = UIApplication.sharedApplication().canOpenURL(NSURL(string: "epichaiku://")!)
+        let CantoInstalled = UIApplication.sharedApplication().canOpenURL(NSURL(string: "epiccanto://")!)
         
         var set = NSMutableSet()
         

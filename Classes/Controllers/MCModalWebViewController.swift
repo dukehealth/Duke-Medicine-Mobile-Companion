@@ -35,7 +35,7 @@ class MCModalWebViewController: UINavigationController {
     }
     
     convenience init(address urlString: String!, tintColor: UIColor!) {
-        self.init(URL: NSURL.URLWithString(urlString), tintColor: tintColor)
+        self.init(URL: NSURL(string: urlString), tintColor: tintColor)
     }
 
     required init(coder aDecoder: NSCoder)

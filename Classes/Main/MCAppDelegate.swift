@@ -101,7 +101,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIAlertViewDelegate {
                 webViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
                 window!.rootViewController?.presentViewController(webViewController, animated: true, completion: nil)
             } else {
-                if UIApplication.sharedApplication().canOpenURL(NSURL .URLWithString(urlString)) {
+                if UIApplication.sharedApplication().canOpenURL(NSURL(string: urlString)!) {
                     // Detaching thread for this because UIApplication was having fits being called at the same time as the app was starting
                     NSThread.detachNewThreadSelector(Selector("openURLInBackground:"), toTarget: self, withObject: urlString)
                 } else {
@@ -121,6 +121,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIAlertViewDelegate {
     
     // Detach thread for Maps URLs
     func openURLInBackground(urlString: String) {
-        UIApplication.sharedApplication().openURL(NSURL.URLWithString(urlString))
+        UIApplication.sharedApplication().openURL(NSURL(string: urlString)!)
     }
 }

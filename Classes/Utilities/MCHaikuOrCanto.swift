@@ -30,36 +30,36 @@ import Foundation
 Opens the Canto app
 */
 func openCanto() {
-    UIApplication.sharedApplication().openURL(NSURL .URLWithString("epiccanto://"))
+    UIApplication.sharedApplication().openURL(NSURL(string: "epiccanto://")!)
 }
 
 /**
 Opens the Haiku app
 */
 func openHaiku() {
-    UIApplication.sharedApplication().openURL(NSURL .URLWithString("epichaiku://"))
+    UIApplication.sharedApplication().openURL(NSURL(string: "epichaiku://")!)
 }
 
 /**
 Opens the App Store to the Canto app
 */
 func downloadCanto() {
-    UIApplication.sharedApplication().openURL(NSURL .URLWithString("itms-apps://itunes.apple.com/us/app/epic-canto/id395395172?mt=8"))
+    UIApplication.sharedApplication().openURL(NSURL(string: "itms-apps://itunes.apple.com/us/app/epic-canto/id395395172?mt=8")!)
 }
 
 /**
 Opens the App Store to the Haiku app
 */
 func downloadHaiku() {
-    UIApplication.sharedApplication().openURL(NSURL .URLWithString("itms-apps://itunes.apple.com/us/app/epic-haiku/id348308661?mt=8"))
+    UIApplication.sharedApplication().openURL(NSURL(string: "itms-apps://itunes.apple.com/us/app/epic-haiku/id348308661?mt=8")!)
 }
 
 /**
 Returns the string "Haiku" or "Canto" based on whether each is installed.  If on iPad and both are installed, returns the preference in settings
 */
 func HaikuOrCanto() -> String! {
-    let HaikuInstalled: Bool = UIApplication.sharedApplication().canOpenURL(NSURL .URLWithString("epichaiku://"))
-    let CantoInstalled: Bool = UIApplication.sharedApplication().canOpenURL(NSURL .URLWithString("epiccanto://"))
+    let HaikuInstalled: Bool = UIApplication.sharedApplication().canOpenURL(NSURL(string: "epichaiku://")!)
+    let CantoInstalled: Bool = UIApplication.sharedApplication().canOpenURL(NSURL(string: "epiccanto://")!)
     
     if IPAD() {
         if HaikuInstalled && CantoInstalled {

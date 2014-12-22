@@ -40,7 +40,7 @@ Iterates through the Settings plist to find default values, setting them if need
 func defaultsFromPlistNamed(plistName: String) -> NSDictionary {
     let settingsBundlePath = NSBundle.mainBundle().bundlePath.stringByAppendingPathComponent("InAppSettings.bundle")
     let finalPath = settingsBundlePath.stringByAppendingPathComponent("\(plistName).plist")
-    let settingsDict: NSDictionary = NSDictionary(contentsOfFile:finalPath)
+    let settingsDict: NSDictionary = NSDictionary(contentsOfFile:finalPath)!
     let prefSpecifierArray = settingsDict.objectForKey("PreferenceSpecifiers") as Array<NSDictionary>
     
     var defaults = NSMutableDictionary()    
@@ -68,7 +68,7 @@ Accepts the name of the *.plist file, the key of the preference specifier and th
 func titleForValueInPlistNamed(plistName: String, key: String, value: String!) -> String {
     let settingsBundlePath = NSBundle.mainBundle().bundlePath.stringByAppendingPathComponent("InAppSettings.bundle")
     let finalPath = settingsBundlePath.stringByAppendingPathComponent("\(plistName).plist")
-    let settingsDict: NSDictionary = NSDictionary(contentsOfFile:finalPath)
+    let settingsDict: NSDictionary = NSDictionary(contentsOfFile:finalPath)!
     let prefSpecifierArray = settingsDict.objectForKey("PreferenceSpecifiers") as Array<NSDictionary>
     
     for prefSpecification in prefSpecifierArray {

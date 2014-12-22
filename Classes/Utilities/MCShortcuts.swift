@@ -37,7 +37,7 @@ func USER_DEFAULTS() -> NSUserDefaults  {
 Shortcut to return the info dictionary
 */
 func MAIN_INFO_DICTIONARY() -> NSDictionary {
-    return NSBundle.mainBundle().infoDictionary
+    return NSBundle.mainBundle().infoDictionary!
 }
 
 /**
